@@ -11,7 +11,6 @@ export default function DashboardLayout({
       <Sidebar />
       <Navbar />
       {children}
-      <h1>Test</h1>
     </>
   );
 }
