@@ -10,6 +10,7 @@ import {
   MdOutlineSettings,
   MdHelpCenter,
 } from "react-icons/md";
+import MenuLink from "./menuLink/menuLink";
 
 const menuItems = [
   {
@@ -79,7 +80,13 @@ const Sidebar = () => {
     <div className={styles.container}>
       <ul>
         {menuItems.map((item) => (
-          <li key={item.title}>{item.title}</li>
+          <>
+            <li key={item.title}>{item.title}</li>
+            <span className={styles.cat}>{item.title}</span>
+            {item.list.map((listItem) => {
+              <MenuLink listItem={listItem} key={listItem.title} />;
+            })}
+          </>
         ))}
       </ul>
     </div>
