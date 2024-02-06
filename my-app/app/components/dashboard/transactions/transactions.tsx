@@ -34,6 +34,44 @@ const Transactions = () => {
             <td>13.02.2024</td>
             <td>$999</td>
           </tr>
+
+          <tr>
+            <td>
+              <Image
+                src="/noavatar.png"
+                alt="avatar"
+                width={40}
+                height={40}
+                className={styles.userImage}
+              />
+              John Doe
+            </td>
+            <td>
+              <span className={`${styles.status} ${styles.done}`}>Pending</span>
+            </td>
+            <td>13.02.2024</td>
+            <td>$999</td>
+          </tr>
+
+          <tr>
+            <td>
+              <Image
+                src="/noavatar.png"
+                alt="avatar"
+                width={40}
+                height={40}
+                className={styles.userImage}
+              />
+              John Doe
+            </td>
+            <td>
+              <span className={`${styles.status} ${styles.cancelled}`}>
+                Pending
+              </span>
+            </td>
+            <td>13.02.2024</td>
+            <td>$999</td>
+          </tr>
         </tbody>
       </table>
     </div>
