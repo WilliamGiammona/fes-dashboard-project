@@ -51,7 +51,7 @@ const Transactions = () => {
               </div>
             </td>
             <td>
-              <span className={`${styles.status} ${styles.done}`}>Pending</span>
+              <span className={`${styles.status} ${styles.done}`}>Done</span>
             </td>
             <td>13.02.2024</td>
             <td>$999</td>
@@ -72,6 +72,28 @@ const Transactions = () => {
             </td>
             <td>
               <span className={`${styles.status} ${styles.cancelled}`}>
+                Cancelled
+              </span>
+            </td>
+            <td>13.02.2024</td>
+            <td>$999</td>
+          </tr>
+
+          <tr>
+            <td>
+              <div className={styles.user}>
+                <Image
+                  src="/noavatar.png"
+                  alt="avatar"
+                  width={40}
+                  height={40}
+                  className={styles.userImage}
+                />
+                John Doe
+              </div>
+            </td>
+            <td>
+              <span className={`${styles.status} ${styles.pending}`}>
                 Pending
               </span>
             </td>
