@@ -11,6 +11,7 @@ import {
   MdHelpCenter,
 } from "react-icons/md";
 import MenuLink from "./menuLink/menuLink";
+import Image from "next/image";
 
 const menuItems = [
   {
@@ -78,16 +79,27 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className={styles.container}>
-      <ul>
+      <div className={styles.user}>
+        <Image
+          className={styles.userImage}
+          src="/noavatar.png"
+          alt="user"
+          width={50}
+          height={50}
+        />
+        <div className={styles.userDetail}>
+          <span className={styles.username}>John Doe</span>
+          <span className={styles.userTitle}>Administrator</span>
+        </div>
+      </div>
+      <ul className={styles.list}>
         {menuItems.map((item) => (
-          <>
-            <li key={item.title}>{item.title}</li>
+          <li key={item.title}>
             <span className={styles.cat}>{item.title} </span>
             {item.list.map((listItem) => (
               <MenuLink listItem={listItem} key={listItem.title} />
             ))}
-            <h1>hi</h1>
-          </>
+          </li>
         ))}
       </ul>
     </div>
