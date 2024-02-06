@@ -1,13 +1,23 @@
 import Card from "../components/dashboard/card/card";
-import styles from "../components/dashboard/card/card.module.css";
+import Chart from "../components/dashboard/chart/chart";
+import styles from "../components/dashboard/dashboard.module.css";
+import RightBar from "../components/dashboard/rightbar/rightbar";
+import Transactions from "../components/dashboard/transactions/transactions";
 
 const Dashborad = () => {
   return (
-    <div>
-      <div className={styles.cards}>
-        <Card />
-        <Card />
-        <Card />
+    <div className={styles.wrapper}>
+      <main className={styles.main}>
+        <div className={styles.cards}>
+          <Card />
+          <Card />
+          <Card />
+        </div>
+        <Transactions />
+        <Chart />
+      </main>
+      <div className={styles.side}>
+        <RightBar />
       </div>
     </div>
   );
