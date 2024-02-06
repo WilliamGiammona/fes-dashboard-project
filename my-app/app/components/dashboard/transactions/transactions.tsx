@@ -17,14 +17,16 @@ const Transactions = () => {
         <tbody>
           <tr>
             <td>
-              <Image
-                src="/noavatar.png"
-                alt="avatar"
-                width={40}
-                height={40}
-                className={styles.userImage}
-              />
-              John Doe
+              <div className={styles.user}>
+                <Image
+                  src="/noavatar.png"
+                  alt="avatar"
+                  width={40}
+                  height={40}
+                  className={styles.userImage}
+                />
+                John Doe
+              </div>
             </td>
             <td>
               <span className={`${styles.status} ${styles.pending}`}>
@@ -37,14 +39,16 @@ const Transactions = () => {
 
           <tr>
             <td>
-              <Image
-                src="/noavatar.png"
-                alt="avatar"
-                width={40}
-                height={40}
-                className={styles.userImage}
-              />
-              John Doe
+              <div className={styles.user}>
+                <Image
+                  src="/noavatar.png"
+                  alt="avatar"
+                  width={40}
+                  height={40}
+                  className={styles.userImage}
+                />
+                John Doe
+              </div>
             </td>
             <td>
               <span className={`${styles.status} ${styles.done}`}>Pending</span>
@@ -55,14 +59,16 @@ const Transactions = () => {
 
           <tr>
             <td>
-              <Image
-                src="/noavatar.png"
-                alt="avatar"
-                width={40}
-                height={40}
-                className={styles.userImage}
-              />
-              John Doe
+              <div className={styles.user}>
+                <Image
+                  src="/noavatar.png"
+                  alt="avatar"
+                  width={40}
+                  height={40}
+                  className={styles.userImage}
+                />
+                John Doe
+              </div>
             </td>
             <td>
               <span className={`${styles.status} ${styles.cancelled}`}>
