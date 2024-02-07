@@ -16,7 +16,7 @@ const Pagination = ({ count }: any) => {
   const hasPrev = ITEM_PER_PAGE * (parseInt(page) - 1) > 0;
   const hasNext = ITEM_PER_PAGE * (parseInt(page) - 1) + ITEM_PER_PAGE < count;
 
-  const handleChangePage = (type) => {
+  const handleChangePage = (type: any) => {
     type === "prev"
       ? params.set("page", parseInt(page) - 1)
       : params.set("page", parseInt(page) + 1);
